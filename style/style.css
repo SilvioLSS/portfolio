@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nova+Flat&family=Sigmar&display=swap');
+
+/* General Styles */
+body {
+    font-family: "Nova Flat", serif;
+    color: #00000080;
+}
+
+.nav-link {
+    color: black;
+    font-family: "Libre Baskerville", serif;
+    font-size: medium;
+    transition: 0.2s;
+}
+
+span {
+    color: white;
+    background-color: #5ce1e6;
+}
+
+.nav-link:hover {
+    color: #ffffff !important;
+    background-color: #5ce1e6;
+    font-size: large;
+}
+
+.titulo {
+    font-family: "Sigmar", serif;
+    font-weight: 400;
+}
+
+.texto {
+    font-family: "Nova Flat", serif;
+    font-size: large;
+}
+
+/* Introduction Section */
+#introducao {
+    background-color: #5ce1e6;
+    color: white;
+    padding: 20px;
+}
+
+#perfil {
+    border-radius: 25%;
+    max-width: 150px; /* Adjust as needed */
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* Projects Section */
+#projetos {
+    padding: 20px;
+}
+
+.projeto {
+    position: relative;
+    /* height: auto !important; */
+    /* width: 100% !important; */
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.projeto-fundo {
+    background-size: cover;
+    background-position: center;
+    transition: background-position 3s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.projeto:hover .projeto-fundo {
+    background-position: 100% 100%;
+    cursor: pointer;
+}
+
+.projeto-escuro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); /* Initially transparent */
+    transition: background-color 0.5s;
+}
+
+.projeto:hover .projeto-escuro {
+    background-color: rgba(0, 0, 0, 0.5); /* Darken on hover */
+    cursor: pointer;
+}
+
+.projeto-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.5s;
+    text-align: center; /* Center text */
+}
+
+.projeto:hover .projeto-info {
+    opacity: 1;
+    cursor: pointer;
+}
+
+/* Contact Section */
+#botaoForm {
+    background-color: #5ce1e6;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #5ce1e6;
+    color: white;
+    padding: 20px 0;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    #perfil {
+        max-width: 200px;
+    }
+    .projeto {
+          height: 400px !important;
+    width: 100% !important;
+}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #perfil {
+        max-width: 250px;
+    }
+        .projeto {
+          height: 500px !important;
+    width: 100% !important;
+}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #perfil {
+        max-width: 200px;
+    }
+    .projeto {
+           height: 667px !important;
+    width: 375px !important;
+}
+    #introducao .row {
+        align-items: center; /* Vertically center items in the intro row */
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .projeto {
+           height: 667px !important;
+    width: 375px !important;
+}
+}
