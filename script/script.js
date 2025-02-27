@@ -1,3 +1,5 @@
+AOS.init();
+
 let projeto = document.querySelector('.projeto');
 
 projeto.addEventListener('click', () => {

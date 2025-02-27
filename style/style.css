@@ -1,173 +1,304 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nova+Flat&family=Sigmar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400..900;1,400..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* General Styles */
-body {
-    font-family: "Nova Flat", serif;
-    color: #00000080;
+* {
+    background-color: black;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
-.nav-link {
-    color: black;
-    font-family: "Libre Baskerville", serif;
-    font-size: medium;
-    transition: 0.2s;
-}
-
-span {
-    color: white;
-    background-color: #5ce1e6;
-}
-
-.nav-link:hover {
-    color: #ffffff !important;
-    background-color: #5ce1e6;
-    font-size: large;
-}
-
-.titulo {
-    font-family: "Sigmar", serif;
-    font-weight: 400;
-}
-
-.texto {
-    font-family: "Nova Flat", serif;
-    font-size: large;
-}
-
-/* Introduction Section */
 #introducao {
-    background-color: #5ce1e6;
-    color: white;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
-#perfil {
-    border-radius: 25%;
-    max-width: 150px; /* Adjust as needed */
+#logo {
+    width: 80%;
     height: auto;
-    margin-bottom: 15px;
-}
-
-/* Projects Section */
-#projetos {
-    padding: 20px;
-}
-
-.projeto {
-    position: relative;
-    /* height: auto !important; */
-    /* width: 100% !important; */
-    overflow: hidden;
-    border-radius: 10px;
     margin-bottom: 20px;
 }
 
-.projeto-fundo {
-    background-size: cover;
-    background-position: center;
-    transition: background-position 3s;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+.titulo {
+    font-family: "Oswald", serif;
+    color: rgba(219, 219, 219, 0.79);
+    font-size: 40px;
+    margin: 10% 0 0 0;
+}
+
+.subtitulo {
+    font-family: "Besley", serif;
+    color: rgba(219, 219, 219, 0.79);
+}
+
+.texto {
+    font-family: "Roboto", serif;
+    color: rgba(219, 219, 219, 0.79);
+}
+
+#habilidades {
+    text-align: center;
     height: 100%;
 }
 
-.projeto:hover .projeto-fundo {
-    background-position: 100% 100%;
-    cursor: pointer;
-}
-
-.projeto-escuro {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0); /* Initially transparent */
-    transition: background-color 0.5s;
-}
-
-.projeto:hover .projeto-escuro {
-    background-color: rgba(0, 0, 0, 0.5); /* Darken on hover */
-    cursor: pointer;
-}
-
-.projeto-info {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+#rowHabilidades {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.habilidade {
+    width: 60%;
+    height: auto;
+    border: 2px solid #5ce1e6;
+    border-radius: 5%;
+    margin: 10px;
+    transition: box-shadow 0.2s;
+}
+
+.habilidade img {
+    margin: 0;
+    width: 50%;
+    height: auto;
+}
+
+.pc {
+    height: 156px;
+    width: 270px;
+    border: 5px solid rgba(219, 219, 219, 0.79);
+    margin: 5px;
+    border-radius: 5%;
+}
+
+.cell {
+    height: 259px;
+    width: 146px;
+    border: 5px solid rgba(219, 219, 219, 0.79);
+    margin: 5px;
+    border-radius: 5%;
+}
+
+.projeto {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
-    opacity: 0;
-    transition: opacity 0.5s;
-    text-align: center; /* Center text */
+    border: 1px solid #5ce1e6;
+    width: 99%;
+    padding: 2px;
+    border-radius: 2%;
+    transition: box-shadow 0.2s;
 }
 
-.projeto:hover .projeto-info {
-    opacity: 1;
+.telas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#projetos {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#livia .pc {
+    background-size: cover;
+}
+
+#livia .cell {
+    background-size: cover;
+}
+
+#feedbacks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.feedback{
+    border: 1px solid #5ce1e6;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    width: 95%;
+    border-radius: 2%;
+    justify-content: center;
+    align-items: center;
+    transition: box-shadow 0.2s;
+}
+
+#perfil{
+    width: 50%;
+}
+
+#feedbackLivia{
+    width: 50%;
+    height: auto;
+    border-radius: 2%;
+}
+
+#contato {
+    text-align: center;
+}
+
+#contato form {
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#contato label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#contato input, #contato textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: white;
+}
+
+#contato textarea {
+    resize: vertical;
+}
+
+#contato button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #5ce1e6;
+    color: white;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-/* Contact Section */
-#botaoForm {
-    background-color: #5ce1e6;
-    color: white;
+#contato button[type="submit"]:hover {
+    background-color: #0056b3;
 }
 
-/* Footer */
-footer {
-    background-color: #5ce1e6;
-    color: white;
-    padding: 20px 0;
-}
-
-/* Media Queries for Responsiveness */
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-    #perfil {
-        max-width: 200px;
+@media (hover: hover) {
+    .habilidade:hover {
+        box-shadow: 5px 2px 2px #5ce1e6;
     }
+
+    .projeto:hover {
+        box-shadow: 5px 2px 2px #5ce1e6;
+    }
+
+    .feedback:hover {
+        box-shadow: 5px 2px 2px #5ce1e6;
+    }
+}
+
+@media screen and (min-width: 768px) and (orientation: landscape) {
+
+    #logo {
+        width: 41%;
+    }
+
+    #rowHabilidades {
+        flex-direction: row;
+    }
+
+    .titulo {
+        font-size: 50px;
+        margin: 5% 0 0 0;
+    }
+
+    .habilidade {
+        width: 10%;
+        margin: 5%;
+    }
+
+    .habilidade img {
+        width: 90%;
+    }
+
     .projeto {
-          height: 400px !important;
-    width: 100% !important;
-}
-}
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #5ce1e6;
+        width: 40%;
+        padding: 5px;
+        cursor: pointer;
+        border-radius: 2%;
+        font-size: x-large;
+    }
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+    #feedbacks{
+        flex-direction: column;
+    }
+
+    .feedback{
+        width: 40%;
+        border-radius: 2%;
+        display: flex;
+        flex-direction: row;
+        font-size:x-large ;
+    }
+
+    .feedbackLivia{
+        width: 20%;
+        border-radius: 2%;
+    }
+
+    .feedback:hover{
+        width: 45%;
+        box-shadow: 5px 2px 2px #5ce1e6;
+    }
+
+    .projeto:hover{
+        width: 45%;
+        box-shadow: 5px 2px 2px #5ce1e6;
+    }
+
+    .habilidade:hover{
+        box-shadow: 5px 2px 2px #5ce1e6;
+    }
+
+    #sobre {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+        font-size: x-large;
+    }
+
     #perfil {
-        max-width: 250px;
+        width: 25%;
+        border-radius: 5%;
+        margin-right: 20px;
     }
-        .projeto {
-          height: 500px !important;
-    width: 100% !important;
-}
-}
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-    #perfil {
-        max-width: 200px;
+    #contato form {
+        padding: 30px;
     }
-    .projeto {
-           height: 667px !important;
-    width: 375px !important;
-}
-    #introducao .row {
-        align-items: center; /* Vertically center items in the intro row */
-    }
-}
 
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-    .projeto {
-           height: 667px !important;
-    width: 375px !important;
-}
+    #contato input, #contato textarea {
+        margin-bottom: 25px;
+    }
+
+    #contato button[type="submit"] {
+        padding: 12px;
+    }
 }
