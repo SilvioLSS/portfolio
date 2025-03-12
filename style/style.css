@@ -63,7 +63,7 @@ header{
 .projeto{
     border: 2px solid #d3d3d3; /* Cor da borda padrão */
     transition: border-color 0.3s ease; /* Transição suave da cor da borda */
-    padding: 10px;
+    padding: 5px;
 }
 
 .projeto:hover{
@@ -84,9 +84,9 @@ header{
 
 /* Estilos para a imagem do PC */
 .pc {
-    width: 50%; /* Ajuste a largura conforme necessário */
-    max-width: 600px; /* Define uma largura máxima */
-    height: 300px; /* Ajuste a altura conforme necessário */
+    width: 65%; /* Ajuste a largura conforme necessário */
+    max-width: 720px; /* Define uma largura máxima */
+    height: 110px; /* Ajuste a altura conforme necessário */
     background-size: contain; /* Garante que a imagem caiba dentro do container */
     background-repeat: no-repeat;
     background-position: center;
@@ -95,9 +95,9 @@ header{
 
 /* Estilos para a imagem do Celular */
 .cell {
-    width: 25%; /* Ajuste a largura conforme necessário */
-    max-width: 200px; /* Define uma largura máxima */
-    height: 400px; /* Ajuste a altura conforme necessário */
+    width: 35%; /* Ajuste a largura conforme necessário */
+    max-width: 240px; /* Define uma largura máxima */
+    height: 210px; /* Ajuste a altura conforme necessário */
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -201,6 +201,22 @@ header{
 
     #sobreMim #sobre p {
         text-align: left;
+    }
+
+    .pc {
+        width: 70%; /* Ajuste a largura conforme necessário */
+        max-width: 1200px; /* Define uma largura máxima */
+        height: 110px; /* Ajuste a altura conforme necessário */
+    
+    }
+    .cell {
+        width: 30%; 
+        max-width: 1000px; 
+        height: 210px; 
+    }
+
+    .telas{
+        flex-direction: column;
     }
 }
 
