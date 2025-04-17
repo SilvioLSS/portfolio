@@ -64,6 +64,7 @@ header{
     border: 2px solid #d3d3d3; /* Cor da borda padrão */
     transition: border-color 0.3s ease; /* Transição suave da cor da borda */
     padding: 5px;
+    border-radius: 25px;
 }
 
 .projeto:hover{
@@ -167,6 +168,10 @@ header{
         width: 30%;
     }
 
+    .projeto{
+        width: 40%;
+    }
+
     .nav-item a{
         margin: 20px;
     }
@@ -216,7 +221,7 @@ header{
     }
 
     .telas{
-        flex-direction: column;
+        flex-direction: row;
     }
 }
 
