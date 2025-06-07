@@ -176,20 +176,8 @@ header{
         margin: 20px;
     }
 
-    #fotoSilvio, #fotoLivia{
+    #fotoSilvio{
         border-radius: 50%;
-    }
-
-    #feedbacks .feedback {
-        flex-direction: row; /* Coloca a imagem e o texto em linha no desktop */
-        text-align: left; /* Alinha o texto à esquerda no desktop */
-    }
-
-    #feedbacks .feedback img {
-        width: 50%; /* Largura da imagem no desktop */
-        max-width: 200px; /* Largura máxima da imagem no desktop */
-        margin-right: 20px; /* Espaço entre a imagem e o texto no desktop */
-        margin-bottom: 0; /* Remove o espaço inferior da imagem no desktop */
     }
 
     #sobre {
@@ -209,7 +197,7 @@ header{
     }
 
     .pc {
-        width: 70%; /* Ajuste a largura conforme necessário */
+        width: 50%; /* Ajuste a largura conforme necessário */
         max-width: 1200px; /* Define uma largura máxima */
         height: 110px; /* Ajuste a altura conforme necessário */
     

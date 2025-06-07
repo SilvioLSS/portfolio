@@ -19,8 +19,8 @@ botao.addEventListener("click", () => {
 });
 
 
-let siteLivia = document.getElementById("livia");
+let siteLivia = document.getElementById("vipfitness");
 siteLivia.addEventListener('click', () => {
-  window.location.href = "https://liviamakeupartist.com.br/"
+  window.location.href = "https://academiavipfitness.com/"
 })
 
