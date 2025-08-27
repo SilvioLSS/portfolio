@@ -36,7 +36,10 @@ body{
 
 #profile{
     border-radius: 50%;
-    width: 80%;
+    width: 85%;
+    background-color: white;
+    border: 5px solid #5ce1e6;
+
 }
 
 header{
